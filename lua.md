@@ -321,13 +321,19 @@ end
 return nil, err
 ```
 ## Паттерны проектирования
+Lua - это небольшой язык с небольшим количеством простых строительных блоков, которые можно комбинировать множеством эффективных способов. С этой свободой приходит потребность в самодисциплине в форме шаблонов проектирования. Часто существует идиоматический способ или шаблон проектирования для достижения определенного эффекта в Lua, который можно часто повторно использовать (например, [ObjectOrientationTutorial](http://lua-users.org/wiki/ObjectOrientationTutorial) или [ReadOnlyTables](http://lua-users.org/wiki/ReadOnlyTables)). См.   [LuaTutorial](http://lua-users.org/wiki/LuaTutorial) и [SampleCode](http://lua-users.org/wiki/SampleCode) для общих решений таких проблем.
 
-Lua is small language with a small number of simple building blocks that can be combined in a vast number of powerful ways. With this freedom comes the need for self-discipline in the form of design patterns. Often there is an idiomatic way or design pattern to achieving a certain effect in Lua that can be reused frequently (e.g.  [ObjectOrientationTutorial](http://lua-users.org/wiki/ObjectOrientationTutorial)  or  [ReadOnlyTables](http://lua-users.org/wiki/ReadOnlyTables)). See the  [LuaTutorial](http://lua-users.org/wiki/LuaTutorial)  and  [SampleCode](http://lua-users.org/wiki/SampleCode)  for common solutions to such problems.
+## Coding Standards
+
+Here is a list of coding standards used in various Lua projects:
+
+-   [[Sputnik coding standard]](http://sputnik.freewisdom.org/en/Coding_Standard)
+
 ## Основа для настоящего соглашения
 http://lua-users.org/wiki/LuaStyleGuide - материал использовался при создании данного руководства
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzYzMzg2NTgwLDUxNjM2NTU1NywxNzY3OD
+eyJoaXN0b3J5IjpbOTczMDI0NTAzLDUxNjM2NTU1NywxNzY3OD
 g0NzM5LDE5MjcyNzczOTYsNDkxNDE0MTEwLC0xMDc2MDQ5Njkx
 XX0=
 -->
