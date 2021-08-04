@@ -212,9 +212,7 @@
 -   именование модулей – с помощью snake_case (избегайте подчеркивания и дефисов) - „luasql“, а не „Lua-SQL“
 -   `*_mt`  и  `*_methods`  определяют метатаблицу и таблицу методов
 
-## 
-
-Идиомы и шаблоны
+# Идиомы и шаблоны
 
 Всегда пользуйтесь круглыми скобками при вызове функций, за исключением множественных случаев (распространенные идиомы в Lua):
 
@@ -376,6 +374,6 @@ if not err then
 end
 return nil, err
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxOTE0MTg0NSwxOTI3Mjc3Mzk2LDQ5MT
-QxNDExMCwtMTA3NjA0OTY5MV19
+eyJoaXN0b3J5IjpbLTIwMzE1Mjk3MDAsMTkyNzI3NzM5Niw0OT
+E0MTQxMTAsLTEwNzYwNDk2OTFdfQ==
 -->
