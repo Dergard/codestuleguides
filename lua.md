@@ -117,16 +117,16 @@
     ```
  -   вставляйте пробелы до и после операторов.
     ```lua
-     local thing=1
-     thing = thing-1
-     thing = thing*1
-     thing = 'string'..'s'
-     -- плохо
-        
-     local thing = 1
-     thing = thing - 1
-     thing = thing * 1
-     thing = 'string' .. 's'
+   local thing=1
+   thing = thing-1
+   thing = thing*1
+   thing = 'string'..'s'
+-- плохо
+```        
+local thing = 1
+thing = thing - 1
+thing = thing * 1
+thing = 'string' .. 's'
      -- хорошо
     ```
  - добавляйте пробел после запятых в таблицах.
@@ -382,6 +382,6 @@ if not err then
 end
 return nil, err
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDA0OTAyNjcsMTkyNzI3NzM5Niw0OT
-E0MTQxMTAsLTEwNzYwNDk2OTFdfQ==
+eyJoaXN0b3J5IjpbLTI3NDM0Mzk4NywxOTI3Mjc3Mzk2LDQ5MT
+QxNDExMCwtMTA3NjA0OTY5MV19
 -->
