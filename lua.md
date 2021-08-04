@@ -186,16 +186,15 @@
 # Недопущение глобальных переменных
 
 Следует избегать глобальных переменных. В исключительных случаях используйте переменную  `_G`  для объявления, добавьте префикс или таблицу вместо префикса:
-
-function bad_global_example()
-end -- глобальная, очень-очень плохо
-
-function good_local_example()
-end
-_G.modulename_good_local_example = good_local_example -- локальная, хорошо
-_G.modulename = {}
-_G.modulename.good_local_example = good_local_example -- локальная, лучше
-
+```lua
+   function bad_global_example()
+   end -- глобальная, очень-очень плохо
+   function good_local_example()
+   end
+   _G.modulename_good_local_example = good_local_example -- локальная, хорошо
+   _G.modulename = {}
+   _G.modulename.good_local_example = good_local_example -- локальная, лучше
+```
 Всегда добавляйте префиксы во избежание конфликта имен
 
 ## 
@@ -376,6 +375,6 @@ if not err then
 end
 return nil, err
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3OTk4MDU3NCwxOTI3Mjc3Mzk2LDQ5MT
+eyJoaXN0b3J5IjpbMTIyNDM3NDg3MiwxOTI3Mjc3Mzk2LDQ5MT
 QxNDExMCwtMTA3NjA0OTY5MV19
 -->
