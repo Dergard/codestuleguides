@@ -116,29 +116,29 @@
   ]]--
     ```
  -   вставляйте пробелы до и после операторов
- ```lua
-        local thing=1
-        thing = thing-1
-        thing = thing*1
-        thing = 'string'..'s'
-        -- плохо
+       ```lua
+       local thing=1
+     thing = thing-1
+     thing = thing*1
+     thing = 'string'..'s'
+     -- плохо
         
-        local thing = 1
-        thing = thing - 1
-        thing = thing * 1
-        thing = 'string' .. 's'
-        -- хорошо
+     local thing = 1
+     thing = thing - 1
+     thing = thing * 1
+     thing = 'string' .. 's'
+     -- хорошо
   ```
- - добавляйте пробел после запятых в таблицах
-        ```lua
-        local thing = {1,2,3}
-        thing = {1 , 2 , 3}
+ - добавляйте пробел после запятых в таблицах.
+  ```lua
+  local thing = {1,2,3}
+  thing = {1 , 2 , 3}
         thing = {1 ,2 ,3}
         -- плохо
         
         local thing = {1, 2, 3}
         -- хорошо
-        ```
+  ```
     -   используйте пробелы в определениях ассоциативного массива по сторонам от знаков равенства и запятых
         ```lua
         return {1,2,3,4} -- плохо
@@ -382,6 +382,6 @@ if not err then
 end
 return nil, err
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyMDc2MDk2NSwxOTI3Mjc3Mzk2LDQ5MT
-QxNDExMCwtMTA3NjA0OTY5MV19
+eyJoaXN0b3J5IjpbLTE2NDU2ODgyMzMsMTkyNzI3NzM5Niw0OT
+E0MTQxMTAsLTEwNzYwNDk2OTFdfQ==
 -->
