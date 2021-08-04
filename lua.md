@@ -105,17 +105,17 @@
     end -- хорошо
     ```
 - добавляйте пробел после маркера комментария
-```lua
+    ```lua
   while true do -- встроенный комментарий
-        -- комментарий
-        do_something()
-        end
-        --[[
-         многострочный
-         комментарий
-        ]]--
-          ```
- -   примыкающие конструкции
+      -- комментарий
+      do_something()
+  end
+  --[[
+  многострочный
+  комментарий
+  ]]--
+    ```
+ -   вставляйте пробелы до и после операторов
  ```lua
         local thing=1
         thing = thing-1
@@ -382,6 +382,6 @@ if not err then
 end
 return nil, err
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTI5NjI0MzYsMTkyNzI3NzM5Niw0OT
-E0MTQxMTAsLTEwNzYwNDk2OTFdfQ==
+eyJoaXN0b3J5IjpbLTgyMDc2MDk2NSwxOTI3Mjc3Mzk2LDQ5MT
+QxNDExMCwtMTA3NjA0OTY5MV19
 -->
