@@ -221,7 +221,7 @@
 
 Избегайте конструкций такого типа:
 
--   <func>“<name>“ (особенно избегайте require“..“)
+-   \<func>\<name> (особенно избегайте require“..“)
 -   `function  object:method()  end`  (используйте  `function  object.method(self)  end`)
 -   не вставляйте точку с запятой в качестве символа-разделителя в таблице (только запятые)
 -   точки с запятой в конце строки (только для разделения нескольких операторов в одной строке)
@@ -374,6 +374,6 @@ if not err then
 end
 return nil, err
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzE1Mjk3MDAsMTkyNzI3NzM5Niw0OT
-E0MTQxMTAsLTEwNzYwNDk2OTFdfQ==
+eyJoaXN0b3J5IjpbLTgxMDAyODM3NCwxOTI3Mjc3Mzk2LDQ5MT
+QxNDExMCwtMTA3NjA0OTY5MV19
 -->
