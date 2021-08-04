@@ -18,7 +18,7 @@
     
     if a ^ b == true then
     end -- хорошо, но не явно
-    
+    ```
 -   Преобразование типов
     
     Не используйте конкатенацию для конвертации в строку или в число (вместо этого воспользуйтесь  `tostring`/`tonumber`):
@@ -38,7 +38,7 @@
     local a = '123'
     a = tonumber(a) + 5 -- 128
     -- хорошо
-    
+    ```
 -   Постарайтесь избегать несколько вложенных  `if`  с общим телом оператора:
     ```lua
     if (a == true and b == false) or (a == false and b == true) then
@@ -56,7 +56,7 @@
         end
     end
     -- плохо
-    
+    ```
 -   Избегайте множества конкатенаций в одном операторе, лучше использовать  `string.format`:
     ```lua
     function say_greeting(period, name)
@@ -74,9 +74,9 @@
         local a = say_greeting_fmt:format(period, name)
     end
     -- лучше всего
-    
+    ```
 -   Используйте  `and`/`or`  для указания значений переменных, используемых по умолчанию,
-    
+    ```lua
     function(input)
         input = input or 'default_value'
     end -- хорошо
@@ -86,9 +86,9 @@
             input = 'default_value'
         end
     end -- нормально, но избыточно
-    
+    ```
 -   операторов  `if`  и возврата:
-    
+    ```lua
     if a == true then
         return do_something()
     end
@@ -99,19 +99,19 @@
     else
         do_other_thing()
     end -- плохо
-    
+    ```
 -   Использование пробелов:
     
     -   не следует вставлять пробелы между именем функции и открывающей круглой скобкой, но аргумент необходимо разделять одним символом пробела
-        
+       ```lua 
         function name (arg1,arg2,...)
         end -- плохо
         
         function name(arg1, arg2, ...)
         end -- хорошо
-        
+        ```
     -   добавляйте пробел после маркера комментария
-        
+        ```lua
         while true do -- встроенный комментарий
         -- комментарий
         do_something()
@@ -120,9 +120,9 @@
          многострочный
          комментарий
         ]]--
-        
+        ```
     -   примыкающие конструкции
-        
+        ```lua
         local thing=1
         thing = thing-1
         thing = thing*1
@@ -134,9 +134,9 @@
         thing = thing * 1
         thing = 'string' .. 's'
         -- хорошо
-        
+        ```
     -   добавляйте пробел после запятых в таблицах
-        
+        ```lua
         local thing = {1,2,3}
         thing = {1 , 2 , 3}
         thing = {1 ,2 ,3}
@@ -144,7 +144,7 @@
         
         local thing = {1, 2, 3}
         -- хорошо
-        
+        ```
     -   используйте пробелы в определениях ассоциативного массива по сторонам от знаков равенства и запятых
         
         return {1,2,3,4} -- плохо
@@ -388,6 +388,6 @@ if not err then
 end
 return nil, err
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3MzEwNzE1MCw0OTE0MTQxMTAsLTEwNz
+eyJoaXN0b3J5IjpbMTQxNTYxODkyNCw0OTE0MTQxMTAsLTEwNz
 YwNDk2OTFdfQ==
 -->
