@@ -184,7 +184,7 @@
     ```
 - Удаляйте символы пробела в конце файла (они категорически запрещаются).       
 
-# Недопущение глобальных переменных
+## Недопущение глобальных переменных
 
 Следует избегать глобальных переменных. В исключительных случаях используйте переменную  `_G`  для объявления, добавьте префикс или таблицу вместо префикса:
 ```lua
@@ -198,7 +198,7 @@
 ```
 Всегда добавляйте префиксы во избежание конфликта имен
 
-# Именование
+## Именование
 
 -   имена переменных/»объектов» и «методов»/функций должны быть короткими в нижнем регистре и отображать суть.
     ```lua
@@ -219,7 +219,7 @@
 -   глобальные переменные пишутся ЗАГЛАВНЫМИ_БУКВАМИ с использованием нижнего подчеркивания. Если это системная переменная, для определения используется символ подчеркивания (`_G`/`_VERSION`/..)
 -   именование модулей – в нижнем регистре (избегайте подчеркивания и дефисов) - „luasql“, а не „Lua-SQL“
 
-# Модули
+## Модули
 
 Не начинайте создание модуля с указания лицензии/авторов/описания, это можно сделать в файлах LICENSE/AUTHORS/README соответственно. Для написания модулей используйте один из двух шаблонов (не используйте  `modules()`):
 ```lua
@@ -250,7 +250,7 @@ foo = foo,
 bar = bar,
 }
 ```
-# Комментирование
+## Комментирование
 
 Пишите код так, чтобы его не нужно было описывать, но не забывайте о комментировании. Не следует комментировать Lua-синтаксис (примите, что читатель знаком с языком Lua). Постарайтесь рассказать о функциях, именах переменных и так далее.
 
@@ -275,7 +275,7 @@ end
     end -- if string
   end -- for each t
 ```
-# Lua идиомы
+## Lua идиомы
 Проверку переменной на `not nil` можно не писать, заменив простой конструкцией `if varName`. Lua вернёт `true` если переменная `nil` и `false` если переменная не `nil`.
 ```lua
 local line = io.read()
@@ -294,7 +294,7 @@ local function test(x)
     -- заменяет if x == "yes" then print("YES!") else print(x) end
 end
 ```
-# Обработка ошибок
+## Обработка ошибок
 
 Принимайте разнообразные значения и выдавайте строго определенные.
 
@@ -320,10 +320,14 @@ if not err then
 end
 return nil, err
 ```
-# Полезные ссылки
+## Паттерны проектирования
+
+Lua is small language with a small number of simple building blocks that can be combined in a vast number of powerful ways. With this freedom comes the need for self-discipline in the form of design patterns. Often there is an idiomatic way or design pattern to achieving a certain effect in Lua that can be reused frequently (e.g.  [ObjectOrientationTutorial](http://lua-users.org/wiki/ObjectOrientationTutorial)  or  [ReadOnlyTables](http://lua-users.org/wiki/ReadOnlyTables)). See the  [LuaTutorial](http://lua-users.org/wiki/LuaTutorial)  and  [SampleCode](http://lua-users.org/wiki/SampleCode)  for common solutions to such problems.
+## Основа для настоящего соглашения
 http://lua-users.org/wiki/LuaStyleGuide - материал использовался при создании данного руководства
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU4ODE3NDE0LDUxNjM2NTU1NywxNzY3OD
+eyJoaXN0b3J5IjpbNzYzMzg2NTgwLDUxNjM2NTU1NywxNzY3OD
 g0NzM5LDE5MjcyNzczOTYsNDkxNDE0MTEwLC0xMDc2MDQ5Njkx
 XX0=
 -->
