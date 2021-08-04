@@ -114,7 +114,7 @@
   комментарий
   ]]--
     ```
-- вставляйте пробелы до и после операторов.
+- вставляйте пробелы до и после оператора
   ```lua
   local thing=1
   thing = thing-1
@@ -137,7 +137,7 @@
         
         local thing = {1, 2, 3}
         -- хорошо
-  ```
+```
     -   используйте пробелы в определениях ассоциативного массива по сторонам от знаков равенства и запятых
         ```lua
         return {1,2,3,4} -- плохо
@@ -381,6 +381,6 @@ if not err then
 end
 return nil, err
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwMDU5MjYzLDE5MjcyNzczOTYsNDkxND
-E0MTEwLC0xMDc2MDQ5NjkxXX0=
+eyJoaXN0b3J5IjpbLTk0NjUxMTYwNywxOTI3Mjc3Mzk2LDQ5MT
+QxNDExMCwtMTA3NjA0OTY5MV19
 -->
