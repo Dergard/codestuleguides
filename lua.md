@@ -83,7 +83,7 @@
         end
     end -- нормально, но избыточно
     ```
--  не используйте `else` операторов если в блоке`if` вы вызываете `return`:
+-  не используйте `else` если в блоке`if` вы вызываете `return`.
     ```lua
     if a == true then
         return do_something()
@@ -96,18 +96,17 @@
         do_other_thing()
     end -- плохо
     ```
-- Использование пробелов:    
 - не следует вставлять пробелы между именем функции и открывающей круглой скобкой, но аргумент необходимо разделять одним символом пробела
-  ```lua 
-        function name (arg1,arg2,...)
-        end -- плохо
+    ```lua 
+    function name (arg1,arg2,...)
+    end -- плохо
         
-        function name(arg1, arg2, ...)
-        end -- хорошо
-  ```
+    function name(arg1, arg2, ...)
+    end -- хорошо
+    ```
 - добавляйте пробел после маркера комментария
-  ```lua
-        while true do -- встроенный комментарий
+```lua
+  while true do -- встроенный комментарий
         -- комментарий
         do_something()
         end
@@ -115,7 +114,7 @@
          многострочный
          комментарий
         ]]--
-        ```
+          ```
  -   примыкающие конструкции
  ```lua
         local thing=1
@@ -383,6 +382,6 @@ if not err then
 end
 return nil, err
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkwNzQxMzY1LDE5MjcyNzczOTYsNDkxND
-E0MTEwLC0xMDc2MDQ5NjkxXX0=
+eyJoaXN0b3J5IjpbLTIwMTI5NjI0MzYsMTkyNzI3NzM5Niw0OT
+E0MTQxMTAsLTEwNzYwNDk2OTFdfQ==
 -->
