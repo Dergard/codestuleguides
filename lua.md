@@ -1,4 +1,5 @@
-  # Отступы и форматирование
+  # Соглашение по написанию исходного кода на Lua
+  ## Отступы и форматирование
 
 -   Используйте 4 пробела, а не табуляцию.
 -   Файл должен заканчиваться на один символ переноса строки, но не должен заканчиваться на пустой строке (два символа переноса строки).    
@@ -319,8 +320,10 @@ if not err then
 end
 return nil, err
 ```
+# Полезные ссылки
+http://lua-users.org/wiki/LuaStyleGuide - материал использовался при создании данного руководства
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDQ3NzMzNzcsNTE2MzY1NTU3LDE3Nj
-c4ODQ3MzksMTkyNzI3NzM5Niw0OTE0MTQxMTAsLTEwNzYwNDk2
-OTFdfQ==
+eyJoaXN0b3J5IjpbNjU4ODE3NDE0LDUxNjM2NTU1NywxNzY3OD
+g0NzM5LDE5MjcyNzczOTYsNDkxNDE0MTEwLC0xMDc2MDQ5Njkx
+XX0=
 -->
