@@ -129,16 +129,15 @@
   -- хорошо
   ```
  - добавляйте пробел после запятых в таблицах.
-  ```lua
-  local thing = {1,2,3}
-  thing = {1 , 2 , 3}
-        thing = {1 ,2 ,3}
-        -- плохо
-        
-        local thing = {1, 2, 3}
-        -- хорошо
-```
-    -   используйте пробелы в определениях ассоциативного массива по сторонам от знаков равенства и запятых
+
+local thing = {1,2,3}
+thing = {1 , 2 , 3}
+thing = {1 ,2 ,3}
+-- плохо
+local thing = {1, 2, 3}
+`enter code here`-- хорошо
+
+-   используйте пробелы в определениях ассоциативного массива по сторонам от знаков равенства и запятых
         ```lua
         return {1,2,3,4} -- плохо
         return {
@@ -381,6 +380,6 @@ if not err then
 end
 return nil, err
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0NjUxMTYwNywxOTI3Mjc3Mzk2LDQ5MT
-QxNDExMCwtMTA3NjA0OTY5MV19
+eyJoaXN0b3J5IjpbNDA1MTI3MzUwLDE5MjcyNzczOTYsNDkxND
+E0MTEwLC0xMDc2MDQ5NjkxXX0=
 -->
