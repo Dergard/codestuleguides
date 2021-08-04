@@ -270,23 +270,24 @@ bar = bar,
 В случае ошибки нулевое значение  `nil`  должно быть первым возвращаемым значением. В таком случае ошибку трудно игнорировать.
 
 При проверке возвращаемых значений функции проверяйте сначала первый аргумент. Если это  `nil`, ищите ошибку во втором аргументе:
-
+```lua
 local data, err = foo()
 if not data then
     return nil, err
 end
 return bar(data)
-
+```
 Если производительность вашего кода не имеет первоочередное значение, постарайтесь избегать использования более двух возвращаемых значений.
 
 В редких случаях  `nil`  можно сделать возвращаемым значением. В таком случае можно сначала проверить ошибку, а потом вернуть значение:
-
+```lua
 local data, err = foo()
 if not err then
     return data
 end
 return nil, err
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzU3MDU3ODcsMTkyNzI3NzM5Niw0OT
-E0MTQxMTAsLTEwNzYwNDk2OTFdfQ==
+eyJoaXN0b3J5IjpbNzY3ODIxMjg3LDE5MjcyNzczOTYsNDkxND
+E0MTEwLC0xMDc2MDQ5NjkxXX0=
 -->
