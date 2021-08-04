@@ -266,13 +266,47 @@ function delete (id)
         remove (filename (id))
 end
 ```
-Так как  `end` это завершающая конструкция для многих случаев читающему код поможет использование комментаривание того что `end` заверш
-
+Так как  `end` это завершающая конструкция для многих случаев читающему код поможет использование комментаривание того что `end` завершает
+```lua
   for i,v in ipairs(t) do
     if type(v) == "string" then
-      ...lots of code here...
+      ...много кода...
     end -- if string
   end -- for each t
+```
+# Lua идиомы
+Проверку переменной на `not nil` можно не писать, заменив простой конструкци
+To test whether a variable is not  `nil`  in a conditional, it is terser to just write the variable name rather than explicitly compare against  `nil`. Lua treats  `nil`  and  `false`  as  `false`  (and all other values as  `true`) in a conditional:
+
+local line = io.read()
+if line then  -- instead of line ~= nil
+  ...
+end
+...
+if not line then  -- instead of line == nil
+  ...
+end
+
+However, if the variable tested can ever contain  `false`  as well, then you will need to be explicit if the two conditions must be differentiated:  `line == nil`  v.s.  `line == false`.
+
+`and`  and  `or`  may be used for terser code:
+
+local function test(x)
+  x = x or "idunno"
+    -- rather than if x == false or x == nil then x = "idunno" end
+  print(x == "yes" and "YES!" or x)
+    -- rather than if x == "yes" then print("YES!") else print(x) end
+end
+
+Clone a  _small_  table  `t`  (warning: only for integer keys; this has a system dependent limit on table size; it was just over 2000 on one system):
+
+u = {unpack(t)}
+
+Determine if a table  `t`  is empty (including non-integer keys, which  `#t`  ignores):
+
+if next(t) == nil then ...
+
+To append to an array, it can be terser and more efficient to do  `t[#t+1] = 1`  rather than  `table.insert(t, 1)`.
 
 # Обработка ошибок
 
@@ -301,7 +335,7 @@ end
 return nil, err
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2NTc2Mjk1LDUxNjM2NTU1NywxNzY3OD
-g0NzM5LDE5MjcyNzczOTYsNDkxNDE0MTEwLC0xMDc2MDQ5Njkx
-XX0=
+eyJoaXN0b3J5IjpbLTE3NjQ1NjYyODcsNTE2MzY1NTU3LDE3Nj
+c4ODQ3MzksMTkyNzI3NzM5Niw0OTE0MTQxMTAsLTEwNzYwNDk2
+OTFdfQ==
 -->
