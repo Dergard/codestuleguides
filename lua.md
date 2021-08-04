@@ -142,23 +142,23 @@
     ```lua
       return {1,2,3,4} -- плохо
       return {
-           key1 = val1,key2=val2
-        } -- плохо
-        
-        return {
-            1, 2, 3, 4
-            key1 = val1, key2 = val2,
-            key3 = vallll
-        } -- хорошо
-        --также можно применить выравнивание:
-        ```lua
-        return {
-            long_key  = 'vaaaaalue',
-            key       = 'val',
-            something = 'even better'
-        }
+          key1 = val1,key2=val2
+      } -- плохо
+      
+      return {
+          1, 2, 3, 4
+          key1 = val1, key2 = val2,
+          key3 = vallll
+      } -- хорошо
+      
+      --также можно применить выравнивание:      
+      return {
+          long_key  = 'vaaaaalue',
+          key       = 'val',
+          something = 'even better'
+      }
     ```
-    -   также можно добавлять пустые строки (не слишком часто) для выделения групп связанных функций. Пустые строки не стоит добавлять между несколькими связанными программами в одну строку (например, в формальной реализации)
+- также можно добавлять пустые строки (не слишком часто) для выделения групп связанных функций. Пустые строки не стоит добавлять между несколькими связанными программами в одну строку (например, в формальной реализации)
         
         не слишком часто можно добавлять пустые строки в коде функций, чтобы отделить друг от друга логические части
         ```lua
@@ -380,6 +380,6 @@ if not err then
 end
 return nil, err
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMzU0NDk3NywxOTI3Mjc3Mzk2LDQ5MT
+eyJoaXN0b3J5IjpbMTQxMTk0OTcyNywxOTI3Mjc3Mzk2LDQ5MT
 QxNDExMCwtMTA3NjA0OTY5MV19
 -->
