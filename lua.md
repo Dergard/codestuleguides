@@ -197,9 +197,7 @@
 ```
 Всегда добавляйте префиксы во избежание конфликта имен
 
-## 
-
-Именование
+# Именование
 
 -   имена переменных/»объектов» и «методов»/функций: snake_case
 -   имена «классов»: CamelCase
@@ -375,6 +373,6 @@ if not err then
 end
 return nil, err
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyNDM3NDg3MiwxOTI3Mjc3Mzk2LDQ5MT
-QxNDExMCwtMTA3NjA0OTY5MV19
+eyJoaXN0b3J5IjpbLTEzNzk0OTc2OTcsMTkyNzI3NzM5Niw0OT
+E0MTQxMTAsLTEwNzYwNDk2OTFdfQ==
 -->
