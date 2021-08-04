@@ -199,10 +199,12 @@
 
 # Именование
 
--   имена переменных/»объектов» и «методов»/функций `snake_case`
+-   имена переменных/»объектов» и «методов»/функций должны быть короткими в нижнем регистре
     ```lua
-    some_longnamed_variable = 123
+    count = 123
     ```
+    - логические переменные для удобства можно именовать с использованием префикса `is_`
+    ```lua if is_checksomthing
 -   имена «классов»: CamelCase
 -   частные переменные/методы (в будущем параметры) объекта начинаются с символа подчеркивания  `<object>._<name>`. Избегайте  `local  function  private_methods(self)  end`
 -   логическое именование приветствуется  `is_<...>`,  `isnt_<...>`,  `has_`,  `hasnt_`.
@@ -289,6 +291,6 @@ end
 return nil, err
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2Nzg4NDczOSwxOTI3Mjc3Mzk2LDQ5MT
-QxNDExMCwtMTA3NjA0OTY5MV19
+eyJoaXN0b3J5IjpbOTM5MzE3NzY1LDE3Njc4ODQ3MzksMTkyNz
+I3NzM5Niw0OTE0MTQxMTAsLTEwNzYwNDk2OTFdfQ==
 -->
