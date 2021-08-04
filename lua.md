@@ -266,7 +266,13 @@ function delete (id)
         remove (filename (id))
 end
 ```
+Так как  `end` это завершающая конструкция для многих случаев читающему код поможет использование комментаривание того что `end` заверш
 
+  for i,v in ipairs(t) do
+    if type(v) == "string" then
+      ...lots of code here...
+    end -- if string
+  end -- for each t
 
 # Обработка ошибок
 
@@ -295,6 +301,7 @@ end
 return nil, err
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE2MzY1NTU3LDE3Njc4ODQ3MzksMTkyNz
-I3NzM5Niw0OTE0MTQxMTAsLTEwNzYwNDk2OTFdfQ==
+eyJoaXN0b3J5IjpbMjA2NTc2Mjk1LDUxNjM2NTU1NywxNzY3OD
+g0NzM5LDE5MjcyNzczOTYsNDkxNDE0MTEwLC0xMDc2MDQ5Njkx
+XX0=
 -->
