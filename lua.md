@@ -1,7 +1,5 @@
 
-## 
-
-Отступы и форматирование
+# Отступы и форматирование
 
 -   используйте 4 пробела, а не табуляцию.
 -   Файл должен заканчиваться на один символ переноса строки, но не должен заканчиваться на пустой строке (два символа переноса строки).    
@@ -19,7 +17,6 @@
     if a ^ b == true then
     end -- хорошо, но не явно
     ```
--   Преобразование типов
     
     Не используйте конкатенацию для конвертации в строку или в число (вместо этого воспользуйтесь  `tostring`/`tonumber`):
     ```lua
@@ -387,6 +384,6 @@ if not err then
 end
 return nil, err
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyNzI3NzM5Niw0OTE0MTQxMTAsLTEwNz
-YwNDk2OTFdfQ==
+eyJoaXN0b3J5IjpbMTk3Mjg4MTE2NSwxOTI3Mjc3Mzk2LDQ5MT
+QxNDExMCwtMTA3NjA0OTY5MV19
 -->
