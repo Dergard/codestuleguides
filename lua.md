@@ -83,7 +83,7 @@
         end
     end -- нормально, но избыточно
     ```
--   операторов  `if`  и возврата:
+-  не используйте `else` операторов если в блоке`if` вы вызываете `return`:
     ```lua
     if a == true then
         return do_something()
@@ -383,6 +383,6 @@ if not err then
 end
 return nil, err
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4Nzk5ODkyLDE5MjcyNzczOTYsNDkxND
+eyJoaXN0b3J5IjpbODkwNzQxMzY1LDE5MjcyNzczOTYsNDkxND
 E0MTEwLC0xMDc2MDQ5NjkxXX0=
 -->
