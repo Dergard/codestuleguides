@@ -16,6 +16,8 @@ end -- плохо
 if a ^ b == true then
 end -- хорошо, но не явно
 ```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDkxNDE0MTEwLC0xMDc2MDQ5NjkxXX0=
+eyJoaXN0b3J5IjpbMTgzNjE0Mjg2MCw0OTE0MTQxMTAsLTEwNz
+YwNDk2OTFdfQ==
 -->
