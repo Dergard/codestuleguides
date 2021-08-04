@@ -325,15 +325,14 @@ Lua - это небольшой язык с небольшим количест�
 
 ## Coding Standards
 
-Here is a list of coding standards used in various Lua projects:
-
+Некоторые стандарты программирования, используемые в различных Lua проектах
 -   [[Sputnik coding standard]](http://sputnik.freewisdom.org/en/Coding_Standard)
 
 ## Основа для настоящего соглашения
 http://lua-users.org/wiki/LuaStyleGuide - материал использовался при создании данного руководства
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTczMDI0NTAzLDUxNjM2NTU1NywxNzY3OD
-g0NzM5LDE5MjcyNzczOTYsNDkxNDE0MTEwLC0xMDc2MDQ5Njkx
-XX0=
+eyJoaXN0b3J5IjpbLTE1NTM1NTg4MjIsNTE2MzY1NTU3LDE3Nj
+c4ODQ3MzksMTkyNzI3NzM5Niw0OTE0MTQxMTAsLTEwNzYwNDk2
+OTFdfQ==
 -->
