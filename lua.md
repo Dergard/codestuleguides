@@ -133,8 +133,8 @@
         thing = thing * 1
         thing = 'string' .. 's'
         -- хорошо
-        ```
-        - добавляйте пробел после запятых в таблицах
+  ```
+ - добавляйте пробел после запятых в таблицах
         ```lua
         local thing = {1,2,3}
         thing = {1 , 2 , 3}
@@ -387,6 +387,6 @@ if not err then
 end
 return nil, err
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNDQ0MjU4NCw0OTE0MTQxMTAsLTEwNz
-YwNDk2OTFdfQ==
+eyJoaXN0b3J5IjpbNTcyMzc5NjA0LDQ5MTQxNDExMCwtMTA3Nj
+A0OTY5MV19
 -->
