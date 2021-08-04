@@ -1,5 +1,4 @@
-
-# Отступы и форматирование
+  # Отступы и форматирование
 
 -   Используйте 4 пробела, а не табуляцию.
 -   Файл должен заканчиваться на один символ переноса строки, но не должен заканчиваться на пустой строке (два символа переноса строки).    
@@ -116,13 +115,19 @@
   ]]--
     ```
 - вставляйте пробелы до и после операторов.
-```lua
+  ```lua
   local thing=1
   thing = thing-1
   thing = thing*1
   thing = 'string'..'s'
-   -- плохо--хорошо
-     ```
+  -- плохо
+
+  local thing = 1
+  thing = thing - 1
+  thing = thing * 1
+  thing = 'string' .. 's'
+  -- хорошо
+  ```
  - добавляйте пробел после запятых в таблицах.
   ```lua
   local thing = {1,2,3}
@@ -376,6 +381,6 @@ if not err then
 end
 return nil, err
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1NzU4NTY3MCwxOTI3Mjc3Mzk2LDQ5MT
-QxNDExMCwtMTA3NjA0OTY5MV19
+eyJoaXN0b3J5IjpbMTQwMDU5MjYzLDE5MjcyNzczOTYsNDkxND
+E0MTEwLC0xMDc2MDQ5NjkxXX0=
 -->
