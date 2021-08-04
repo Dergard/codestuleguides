@@ -199,10 +199,10 @@
 
 # Именование
 
--   имена переменных/»объектов» и «методов»/функций: 
-  ```lua 
-  snake_case = 123
-  ```
+-   имена переменных/»объектов» и «методов»/функций `snake_case`
+    ```lua
+    some_longnamed_variable = 123
+    ```
 -   имена «классов»: CamelCase
 -   частные переменные/методы (в будущем параметры) объекта начинаются с символа подчеркивания  `<object>._<name>`. Избегайте  `local  function  private_methods(self)  end`
 -   логическое именование приветствуется  `is_<...>`,  `isnt_<...>`,  `has_`,  `hasnt_`.
@@ -376,6 +376,6 @@ if not err then
 end
 return nil, err
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTAyNDgzMzk4LDE5MjcyNzczOTYsNDkxND
-E0MTEwLC0xMDc2MDQ5NjkxXX0=
+eyJoaXN0b3J5IjpbLTIxOTE0MTg0NSwxOTI3Mjc3Mzk2LDQ5MT
+QxNDExMCwtMTA3NjA0OTY5MV19
 -->
