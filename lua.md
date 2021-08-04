@@ -250,14 +250,15 @@ bar = bar,
 Многострочные комментарии: используйте соответствующие скобки (`--[[  ]]--`) вместо простых (`--[[  ]]`).
 
 ```lua
---- Копирование любой таблицы (поверхностное и глубокое)
--- * deepcopy: копирует все уровни
--- * shallowcopy: копирует только первый уровень
--- Поддержка метаметода __copy для копирования специальных таблиц с метатаблицами
--- @function gsplit
--- @table         inp  оригинальная таблица
--- @shallow[opt]  sep  флаг для поверхностной копии
--- @returns            таблица (копия)
+-- taken from cgilua/src/cgilua/session.lua
+-------------------------------------
+-- Deletes a session.
+-- @param id Session identification.
+-------------------------------------
+function delete (id)
+        assert (check_id (id))
+        remove (filename (id))
+end
 ```
 
 
@@ -288,6 +289,6 @@ end
 return nil, err
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY3ODIxMjg3LDE5MjcyNzczOTYsNDkxND
-E0MTEwLC0xMDc2MDQ5NjkxXX0=
+eyJoaXN0b3J5IjpbMTc2Nzg4NDczOSwxOTI3Mjc3Mzk2LDQ5MT
+QxNDExMCwtMTA3NjA0OTY5MV19
 -->
