@@ -115,9 +115,9 @@
   комментарий
   ]]--
     ```
- -   вставляйте пробелы до и после операторов
-       ```lua
-       local thing=1
+ -   вставляйте пробелы до и после операторов.
+    ```lua
+     local thing=1
      thing = thing-1
      thing = thing*1
      thing = 'string'..'s'
@@ -128,7 +128,7 @@
      thing = thing * 1
      thing = 'string' .. 's'
      -- хорошо
-  ```
+    ```
  - добавляйте пробел после запятых в таблицах.
   ```lua
   local thing = {1,2,3}
@@ -382,6 +382,6 @@ if not err then
 end
 return nil, err
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDU2ODgyMzMsMTkyNzI3NzM5Niw0OT
+eyJoaXN0b3J5IjpbLTEyNDA0OTAyNjcsMTkyNzI3NzM5Niw0OT
 E0MTQxMTAsLTEwNzYwNDk2OTFdfQ==
 -->
