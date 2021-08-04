@@ -227,9 +227,9 @@ function M.bar()
 end
 
 return M
-
---или
-
+```
+или
+```lua
 local function foo()
 ...
 end
@@ -249,8 +249,7 @@ bar = bar,
 
 Многострочные комментарии: используйте соответствующие скобки (`--[[  ]]--`) вместо простых (`--[[  ]]`).
 
-Комментарии к доступным функциям (??):
-
+```lua
 --- Копирование любой таблицы (поверхностное и глубокое)
 -- * deepcopy: копирует все уровни
 -- * shallowcopy: копирует только первый уровень
@@ -259,77 +258,10 @@ bar = bar,
 -- @table         inp  оригинальная таблица
 -- @shallow[opt]  sep  флаг для поверхностной копии
 -- @returns            таблица (копия)
+```
 
-## 
 
-Тестирование
-
-Используйте модуль  `tap`, чтобы написать эффективные тесты. Пример файла с тестом:
-
-#!/usr/bin/env tarantool
-
-local test = require('tap').test('table')
-test:plan(31)
-
-do -- check basic table.copy (deepcopy)
-    local example_table = {
-        {1, 2, 3},
-        {"help, I'm very nested", {{{ }}} }
-    }
-
-    local copy_table = table.copy(example_table)
-
-    test:is_deeply(
-        example_table,
-        copy_table,
-        "checking, that deepcopy behaves ok"
-    )
-    test:isnt(
-        example_table,
-        copy_table,
-        "checking, that tables are different"
-    )
-    test:isnt(
-        example_table[1],
-        copy_table[1],
-        "checking, that tables are different"
-    )
-    test:isnt(
-        example_table[2],
-        copy_table[2],
-        "checking, that tables are different"
-    )
-    test:isnt(
-        example_table[2][2],
-        copy_table[2][2],
-        "checking, that tables are different"
-    )
-    test:isnt(
-        example_table[2][2][1],
-        copy_table[2][2][1],
-        "checking, that tables are different"
-    )
-end
-
-<...>
-
-os.exit(test:check() and 0 or 1)
-
-После тестирования кода вывод будет примерно таким:
-
-TAP version 13
-1..31
-ok - checking, that deepcopy behaves ok
-ok - checking, that tables are different
-ok - checking, that tables are different
-ok - checking, that tables are different
-ok - checking, that tables are different
-ok - checking, that tables are different
-...
-
-## 
-
-Обработка ошибок
+# Обработка ошибок
 
 Принимайте разнообразные значения и выдавайте строго определенные.
 
@@ -355,6 +287,6 @@ if not err then
 end
 return nil, err
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTg0MzUzNDMsMTkyNzI3NzM5Niw0OT
+eyJoaXN0b3J5IjpbLTE1NzU3MDU3ODcsMTkyNzI3NzM5Niw0OT
 E0MTQxMTAsLTEwNzYwNDk2OTFdfQ==
 -->
