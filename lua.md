@@ -100,7 +100,7 @@
         do_other_thing()
     end -- плохо
     ```
--   Использование пробелов:    
+- Использование пробелов:    
 - не следует вставлять пробелы между именем функции и открывающей круглой скобкой, но аргумент необходимо разделять одним символом пробела
   ```lua 
         function name (arg1,arg2,...)
@@ -387,6 +387,6 @@ if not err then
 end
 return nil, err
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTcyMzc5NjA0LDQ5MTQxNDExMCwtMTA3Nj
-A0OTY5MV19
+eyJoaXN0b3J5IjpbMTkyNzI3NzM5Niw0OTE0MTQxMTAsLTEwNz
+YwNDk2OTFdfQ==
 -->
