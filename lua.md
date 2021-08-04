@@ -267,7 +267,7 @@ function delete (id)
         remove (filename (id))
 end
 ```
-Так как  `end` это завершающая конструкция для многих случаев, то читающему код поможет использование комментирование того, что `end` завершает.
+Так как  `end` это завершающая конструкция для многих случаев, то читающему код помогут комментарии после `end`
 ```lua
   for i,v in ipairs(t) do
     if type(v) == "string" then
@@ -332,7 +332,7 @@ Lua - это небольшой язык с небольшим количест�
 http://lua-users.org/wiki/LuaStyleGuide - материал использовался при создании данного руководства
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyOTE2ODY3Niw1MTYzNjU1NTcsMTc2Nz
-g4NDczOSwxOTI3Mjc3Mzk2LDQ5MTQxNDExMCwtMTA3NjA0OTY5
-MV19
+eyJoaXN0b3J5IjpbLTE5ODc4MTE4MzYsNTE2MzY1NTU3LDE3Nj
+c4ODQ3MzksMTkyNzI3NzM5Niw0OTE0MTQxMTAsLTEwNzYwNDk2
+OTFdfQ==
 -->
