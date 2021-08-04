@@ -285,24 +285,14 @@ end
 if not line then  -- instead of line == nil
   ...
 end
-```
+
 local function test(x)
-  x = x or "idunno"
-    -- rather than if x == false or x == nil then x = "idunno" end
+  x = x or "какое-то другое значение"
+    -- заменяет if x == false or x == nil then x = "какое-то другое значение" end
   print(x == "yes" and "YES!" or x)
-    -- rather than if x == "yes" then print("YES!") else print(x) end
+    -- заменяет if x == "yes" then print("YES!") else print(x) end
 end
-
-Clone a  _small_  table  `t`  (warning: only for integer keys; this has a system dependent limit on table size; it was just over 2000 on one system):
-
-u = {unpack(t)}
-
-Determine if a table  `t`  is empty (including non-integer keys, which  `#t`  ignores):
-
-if next(t) == nil then ...
-
-To append to an array, it can be terser and more efficient to do  `t[#t+1] = 1`  rather than  `table.insert(t, 1)`.
-
+```
 # Обработка ошибок
 
 Принимайте разнообразные значения и выдавайте строго определенные.
@@ -330,7 +320,7 @@ end
 return nil, err
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgwMDkwMzEwLDUxNjM2NTU1NywxNzY3OD
-g0NzM5LDE5MjcyNzczOTYsNDkxNDE0MTEwLC0xMDc2MDQ5Njkx
-XX0=
+eyJoaXN0b3J5IjpbLTE0NDQ3NzMzNzcsNTE2MzY1NTU3LDE3Nj
+c4ODQ3MzksMTkyNzI3NzM5Niw0OTE0MTQxMTAsLTEwNzYwNDk2
+OTFdfQ==
 -->
