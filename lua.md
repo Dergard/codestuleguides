@@ -210,7 +210,6 @@
        <...>
       end
     ```
-    
 -   имена «классов»: CamelCase
 -   частные переменные/методы (в будущем параметры) объекта начинаются с символа подчеркивания  `<object>._<name>`. Избегайте  `local  function  private_methods(self)  end`
 -   логическое именование приветствуется  `is_<...>`,  `isnt_<...>`,  `has_`,  `hasnt_`.
@@ -332,7 +331,7 @@ Lua - это небольшой язык с небольшим количест�
 http://lua-users.org/wiki/LuaStyleGuide - материал использовался при создании данного руководства
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODc4MTE4MzYsNTE2MzY1NTU3LDE3Nj
-c4ODQ3MzksMTkyNzI3NzM5Niw0OTE0MTQxMTAsLTEwNzYwNDk2
-OTFdfQ==
+eyJoaXN0b3J5IjpbMTIxMzQ0NDgyMiwtMTk4NzgxMTgzNiw1MT
+YzNjU1NTcsMTc2Nzg4NDczOSwxOTI3Mjc3Mzk2LDQ5MTQxNDEx
+MCwtMTA3NjA0OTY5MV19
 -->
