@@ -571,42 +571,28 @@ for (int i = 0; i < list.Count; i++)
 base(...)» «: this(...)») оформляется таким же образом, как список базовых типов у класса.
 
     ```cs
-        class MySample : MyClass, IMyInterface
+    class MySample : MyClass, IMyInterface
+    {
+        private int _myint;
+        
+        public MySample(int myint): base("hello, MyClass")
+        {
+            _myint = myint;
+        }
+        
+        [MyCustomAttribute]
+        private void Inc()
+        {
+            ++_myint;
+        }
+        
+        protected virtual void EmptyVirtualMethod()
+        {
+        }
+    }
+    ```
 
-{
-
-private int myint;
-
-public MySample(int myint)
-
-: base("hello, MyClass")
-
-{
-
-this.myint = myint;
-
-}
-
-[MyCustomAttribute]
-
-private void Inc()
-
-{
-
-++myint;
-
-}
-
-protected virtual void EmptyVirtualMethod()
-
-{
-
-}
-
-}
-```
-
-3.7 Инструкции (statements)
+### Инструкции (statements)
 
 1. Каждая инструкция должна располагаться на отдельной строке.
 
@@ -1182,5 +1168,5 @@ using(initialization2) {
 
 finally
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDExNjcyNTVdfQ==
+eyJoaXN0b3J5IjpbMzk5MDQ0Njk1XX0=
 -->
