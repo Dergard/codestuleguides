@@ -447,19 +447,20 @@ a = b;
 for (int i = 0; i < 10; ++i)
 {
 }
-
-for (int i=0;i<10;++i) {}
-
-for( int i = 0 ;i< 10;++i )
-
 if (a == b)
-
 {
-
 }
 
-if(a==b){}
-
+//wrong
+TestMethod( a, b, c ); 
+int Bar {get; set;} 
+a=b; 
+for (int i=0; i< 10; ++i)
+{
+}
+if (a == b)
+{
+}
 // табличное форматирование
 
 string name = "Mr. Ed";
@@ -1278,5 +1279,5 @@ using(initialization2) {
 
 finally
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0OTkwMjA4MV19
+eyJoaXN0b3J5IjpbNTg0MTgyNTk2XX0=
 -->
