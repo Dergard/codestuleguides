@@ -483,35 +483,21 @@ Test   aTest   = Test.TestYou;
 
 - Инициализируйте переменные при объявлении, если это возможно.
 
-Пример:
-
-11
+```cs
 
 class Class1
-
 {
-
-private int _totalLineCount = 0;
-
-void SomeFunction(int startValue)
-
-{
-
-int lineCount = startValue;
-
-using (StreamReader sr = File.OpenText(@"c:\MyFile.txt"))
-
-{
-
-while (sr.ReadLine() != null)
-
-lineCount++;
-
-}
-
-_totalLineCount = lineCount;
-
-}
+    private int _totalLineCount = 0;
+    void SomeFunction(int startValue)
+    {
+        int lineCount = startValue;
+        using (StreamReader sr = File.OpenText(@"c:\MyFile.txt"))
+        {
+            while (sr.ReadLine() != null)
+                    lineCount++;
+         }
+        _totalLineCount = lineCount;
+   }
 
 }
 
@@ -1265,5 +1251,5 @@ using(initialization2) {
 
 finally
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTM3NDU4MjJdfQ==
+eyJoaXN0b3J5IjpbNzUxNDQ4MTkyXX0=
 -->
