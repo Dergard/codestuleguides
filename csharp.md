@@ -351,38 +351,28 @@ public delegate void MouseEventHandler(object sender, MouseEventArgs e);
 public class MouseEventArgs : EventArgs
 {
     private int _x;
-    private int y;
+    private int _y;
     public MouseEventArgs(int x, int y)
     {
         this.x = x;
         this.y = y;
     }
     public int X => x;
-    public int Y { get { return y; } }
-
-}
+    public int Y => y;
+ }
 
 public class Control
-
 {
-
-public event MouseEventHandler MouseMove;
-
-protected virtual void OnMouseMove(MouseEventArgs e)
-
-{
-
-if (MouseMove != null)
-
-MouseMove(this, e);
-
-9
-
+    public event MouseEventHandler MouseMove;
+    protected virtual void OnMouseMove(MouseEventArgs e)
+    {
+        if (MouseMove != null)
+        MouseMove(this, e);
+    }
 }
+```
 
-}
-
-2.13 Параметры
+### Параметры
 
 Из имени и типа параметра должны быть понятны его назначение и смысл.
 
@@ -1350,5 +1340,5 @@ using(initialization2) {
 
 finally
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDUyMDY0MzhdfQ==
+eyJoaXN0b3J5IjpbMTE0ODI0ODAyOF19
 -->
