@@ -139,7 +139,9 @@ Ksoft.Control; //wrong
 
 Ksoft.Network; //good
 Ksoft.Networks; //wrong 
-Ksoft.Web; Ksoft.Webs;
+
+Ksoft.Web; //good
+Ksoft.Webs; //wrong
 ``
 5. Не используйте одно и то же имя для класса и пространства имен. Например, не
 
@@ -1595,5 +1597,5 @@ using(initialization2) {
 
 finally
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NTAzMzAzOF19
+eyJoaXN0b3J5IjpbMTI5OTU0MDg2Ml19
 -->
