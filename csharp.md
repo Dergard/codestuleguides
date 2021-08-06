@@ -52,20 +52,14 @@ using System.Web.UI;
 public class Math
 
 {
+    public const PI = ...;
 
-public const PI = ...;
-
-public const E = ...;
-
+    public const E = ...;
 }
 ```
 Выбор слов
 
-1. Не используйте имена, совпадающие с глобальными пространствами имен, такими, как
-
-System и Microsoft. Старайтесь по возможности избегать совпадения с названиями других
-
-сущностей .NET Framework.
+1. Не используйте имена, совпадающие с глобальными пространствами имен, такими, как System и Microsoft. Старайтесь по возможности избегать совпадения с названиями других сущностей .NET Framework.
 
 2. Ниже приводится список имен, использование которых нежелательно:
 
@@ -1611,5 +1605,5 @@ using(initialization2) {
 
 finally
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTcxNjQ2MDhdfQ==
+eyJoaXN0b3J5IjpbNzY1MTQ5MjA4XX0=
 -->
