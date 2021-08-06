@@ -255,31 +255,21 @@ public enum CodeStyle
 
 - Публичные поля именуются в соответствии с правилами именования свойств.
 
+- Одна декларация должна содержать не более одного поля и должна располагаться на одной строке.
 
-
-3. Одна декларация должна содержать не более одного поля и должна располагаться на
-
-одной строке.
-
-Верно Неверно
-
+```cs
+//good
 class A
-
 {
-
-int _var1;
-
-int _var2;
-
-...
-
+    int _var1;
+    int _var2;
+    ...
 }
 
+//wrong
 class A
-
 {
-
-int _var1,
+    int _var1,
 
 _var2;
 
@@ -1451,5 +1441,5 @@ using(initialization2) {
 
 finally
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNDkwOTI3Nl19
+eyJoaXN0b3J5IjpbNTcxODM2MjI4XX0=
 -->
