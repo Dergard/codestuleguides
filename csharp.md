@@ -130,19 +130,19 @@ instanceof package var
 
 - Множественное число следует использовать в случае, если пространство имен объединяет некоторое количество разных, но семантически похожих сущностей. И наоборот, когда пространство имен содержит некую подсистему, стоит использовать единственное число.
 
-```cs
-namespace Ksoft.Collections {} //good
-namespace Ksoft.Collection {} //wrong
-
-namespace Ksoft.Controls {} // good
-namespace Ksoft.Control {} //wrong
-
-namespace Ksoft.Network {} //good
-namespace Ksoft.Networks {} //wrong 
-
-namespace Ksoft.Web {} //good
-namespace Ksoft.Webs {} //wrong
-```
+     ```cs
+     namespace Ksoft.Collections {} //good
+     namespace Ksoft.Collection {} //wrong
+     
+     namespace Ksoft.Controls {} // good
+     namespace Ksoft.Control {} //wrong
+     
+     namespace Ksoft.Network {} //good
+     namespace Ksoft.Networks {} //wrong 
+     
+     namespace Ksoft.Web {} //good
+     namespace Ksoft.Webs {} //wrong
+     ```
 
 - Не используйте одно и то же имя для класса и пространства имен. Например, не используйте класс Debug и пространство имен Debug.
 
@@ -1597,5 +1597,5 @@ using(initialization2) {
 
 finally
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNjI2NzA3Nl19
+eyJoaXN0b3J5IjpbLTEzNjcyNTQ2ODBdfQ==
 -->
