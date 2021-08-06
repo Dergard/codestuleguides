@@ -3,9 +3,9 @@
 
 В русском языке есть некоторые разночтения в названии некоторых частей программы. Во избежание путаницы в этом разделе будут приведены часто встречающиеся термины, их английские аналоги и краткое пояснение.
 
-operator – оператор (например, +, -, *, !)
-statement – инструкция (например, «a = b;», «if (a) {}»)
-expression – выражение (например, «a – b + c», «a == 1»)
+- operator – оператор (например, +, -, *, !)
+- statement – инструкция (например, «a = b;», «if (a) {}»)
+- expression – выражение (например, «a – b + c», «a == 1»)
 
 ## Именование идентификаторов
 
@@ -131,8 +131,8 @@ instanceof package var
 - Множественное число следует использовать в случае, если пространство имен объединяет некоторое количество разных, но семантически похожих сущностей. И наоборот, когда пространство имен содержит некую подсистему, стоит использовать единственное число.
 
 ```cs
-Ksoft.Collections; //good
-Ksoft.Collection; //wrong
+namespace Ksoft.Collections; //good
+namespace Ksoft.Collection; //wrong
 
 Ksoft.Controls; // good
 Ksoft.Control; //wrong
@@ -142,12 +142,11 @@ Ksoft.Networks; //wrong
 
 Ksoft.Web; //good
 Ksoft.Webs; //wrong
-``
-5. Не используйте одно и то же имя для класса и пространства имен. Например, не
+```
 
-используйте класс Debug и пространство имен Debug.
+- Не используйте одно и то же имя для класса и пространства имен. Например, не используйте класс Debug и пространство имен Debug.
 
-Примеры:
+```cs
 
 namespace Ksoft.Controls {}
 
@@ -156,6 +155,7 @@ namespace Ksoft.Collections {}
 namespace Ksoft.Common {}
 
 namespace Ksoft.Network {}
+```
 
 2.2.1 Импорт пространств имен (директива using)
 
@@ -1597,5 +1597,5 @@ using(initialization2) {
 
 finally
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5OTU0MDg2Ml19
+eyJoaXN0b3J5IjpbMTY3MTk4MjIzNl19
 -->
