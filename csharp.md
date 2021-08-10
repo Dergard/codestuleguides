@@ -61,66 +61,7 @@ public class Math
 
 Не используйте имена, совпадающие с глобальными пространствами имен, такими, как System и Microsoft. Старайтесь по возможности избегать совпадения с названиями других сущностей .NET Framework.
 
-Ниже приводится список имен, использование которых нежелательно:
-```cs
-AddHandler AddressOf Alias And Ansi
 
-As Assembly Auto Base Boolean
-
-ByRef Byte ByVal Call Case
-
-Catch CBool CByte CChar CDate
-
-CDec CDbl Char CInt Class
-
-CLng CObj Const CShort CSng
-
-CStr CType Date Decimal Declare
-
-Default Delegate Dim Do Double
-
-Each Else ElseIf End Enum
-
-Erase Error Event Exit ExternalSource
-
-False Finalize Finally Float For
-
-Friend Function Get GetType Goto
-
-Handles If Implements Imports In
-
-Inherits Integer Interface Is Let
-
-Lib Like Long Loop Me
-
-Mod Module MustInherit MustOverride MyBase
-
-MyClass Namespace New Next Not
-
-Nothing NotInheritable NotOverridable Object On
-
-Option Optional Or Overloads Overridable
-
-Overrides ParamArray Preserve Private Property
-
-Protected Public RaiseEvent ReadOnly ReDim
-
-Region REM RemoveHandler Resume Return
-
-Select Set Shadows Shared Short
-
-Single Static Step Stop String
-
-Structure Sub SyncLock Then Throw
-
-To True Try TypeOf Unicode
-
-Until volatile When While With
-
-WithEvents WriteOnly Xor eval extends
-
-instanceof package var
-```
 ## Пространства имен
 
 - Для пространства имен используйте имя компании, затем название продукта и, возможно, название подсистемы или существенной части проекта. Например, Ksoft.Framework, Ksoft.MegaTool.Scanner.
@@ -623,5 +564,6 @@ base(...)» «: this(...)») оформляется таким же образо
 
 - Старайтесь обрабатывать только известные вам исключения. Если вы все же обрабатываете все исключения, то или, проведя необходимую обработку, генерируйте исключение повторно, чтобы его могли обработать последующие фильтры, или выводите пользователю максимально полную информацию об ошибке. Если целью перехвата исключений является очистка ресурсов после сбоя, лучше воспользоваться секцией `finally`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc5MTE1Nzc5LC0xMTk4ODAxNTQ5XX0=
+eyJoaXN0b3J5IjpbNzAzMzU5NTIyLDc3OTExNTc3OSwtMTE5OD
+gwMTU0OV19
 -->
